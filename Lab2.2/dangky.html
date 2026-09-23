@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang ky</title>
+</head>
+<body>
+    <div style="margin: 20px;">
+        <table>
+            <th colspan="2">
+                <h1>PHIEU DANG KY</h1>
+            </th>
+            <form>
+                <tr>
+                    <td>
+                        <label for="user">Ho va ten:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="user" placeholder="Enter username" required>(*)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="addr">Dia chi:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="addr">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="email" required>(*)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Gioi tinh:</label>
+                    </td>
+                    <td>
+                        <label for="nam">
+                            <input type="radio" name="gioitinh" id="nam">Nam
+                        </label>
+                        <label for="nu">
+                            <input type="radio" name="gioitinh" id="nu">Nu
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age">Tuoi:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="age" required>(*)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">So thich:</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="sothich">The thao</label><br>
+                        <label><input type="checkbox" name="sothich">Van hoc</label><br>
+                        <label><input type="checkbox" name="sothich">Cong nghe thong tin</label><br>
+                        <label><input type="checkbox" name="sothich">Lich su</label><br>
+                        <label><input type="checkbox" name="sothich">Game</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Chuyen nghanh:</label>
+                    </td>
+                    <td>
+                        <select name="chuyennganh">
+                            <option value="web">Cong nghe Web</option>
+                            <option value="web">Cong nghe AI</option>
+                            <option value="web">Cong nghe Blockchain</option>
+                            <option value="web">Cong nghe Phan mem</option>
+                            <option value="web">Du lieu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Gui hinh:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="image">
+                        <input type="button" value="Browse...">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Yeu cau:</label>
+                    </td>
+                    <td>
+                        <textarea name="yeucau" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Gui thong tin">
+                        <input type="reset" value="Nhap lai">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>
