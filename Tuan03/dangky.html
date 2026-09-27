@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+</head>
+<style>
+    * {
+        margin: 5px;
+        padding: 2px;
+        width: max-content;
+    }
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    #fgender {
+        margin: 0;
+        padding: 0;
+    }
+    select {
+        width: 95%;
+    }
+    #fsubmit {
+        text-align: right;
+    }
+</style>
+<body>
+    <div>
+        <table>
+            <form action="">
+                <tr>
+                    <td>
+                        <label for="fname">Enter name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fname" id="fname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fpwd">Enter password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="fpwd" id="fpwd">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="femail">Enter Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="femail" id="femail">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fgender">Enter Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="fgender" id="fgender">
+                        <label for="fgender">male</label>
+                        <input type="radio" name="fgender" id="fgender">
+                        <label for="fgender">female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fcountry">Select Country:</label>
+                    </td>
+                    <td>
+                        <select name="fcountry" id="fcountry">
+                            <option value="vn">Vietnam</option>
+                            <option value="ru">Russia</option>
+                            <option value="jp">Japan</option>
+                            <option value="us">United States</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="fsubmit">
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>
