@@ -1,0 +1,54 @@
+:root {
+    --size: 200px;
+}
+.container>.flex {
+    justify-content: normal;
+}
+
+div img {
+    width: 120px;
+}
+
+.head {
+    font-size: 23px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li {
+    margin-left: 20px;
+    list-style: none;
+    align-content: center;
+}
+
+.active {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.active:hover {
+    color: white;
+    cursor: pointer;
+    background-color: #694E4E;
+}
+
+.rect {
+    width: var(--size);
+    height: calc(var(--size) + 80px);
+}
+
+.green {
+    height: var(--size);
+}
+.blue {
+    width: calc(var(--size) + 40px);
+    height: calc(var(--size) + 60px);
+}
+.red {
+    height: calc(var(--size) + 80px);
+}
+
+.row-3>.blue {
+    margin-left: 200px;
+}

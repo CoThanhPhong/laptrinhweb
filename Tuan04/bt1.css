@@ -1,0 +1,21 @@
+h2, p {
+    padding: 10px;
+}
+.container > [class^="post-"] {
+    margin: 20px;
+    width: 500px;
+    border: 1px solid #ccc;
+}
+
+img {
+    width: 100%;
+}
+
+.post-2>p, .post-3>h2 {
+    color: wheat;
+    background-color: grey;
+}
+
+.post-3>h2 {
+    margin-top: 20px;
+}

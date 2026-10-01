@@ -1,0 +1,29 @@
+footer {
+    width: 800px;
+    padding: 20px;
+    background-color: #111;
+}
+h2 {
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #666;
+    margin-bottom: 20px;
+}
+.links {
+    width: 40%;
+}
+.about {
+    width: 60%;
+    margin-right: 20px;
+}
+p {
+    color: #666;
+}
+ul li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
