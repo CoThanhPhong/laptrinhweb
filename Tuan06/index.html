@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Lab 06</title>
+</head>
+<body>
+    <div class="container flex-column">
+        <h2>Example</h2>
+        <img src="./images/bulboff.gif" id="light">
+        <button id="btn" onclick="bulb()">Bật đèn</button>
+    </div>
+
+    <div class="container">
+        <h2>Bài tập 1: Kiểm tra số chẵn - lẻ</h2>
+        <div class="flex-row">
+            <input type="number" name="ex-1" id="ex-1" placeholder="Nhập số nguyên" value="1" min="1" step="1">
+            <button onclick="numCheck('ex-1')">Kiểm tra</button>
+        </div>
+        <p id="result">Kêt quả: </p>
+    </div>
+    
+    <div class="container">
+        <h2>Bài tập 2: Tính tuổi</h2>
+        <div class="flex-row">
+            <input type="text" name="ex-2" id="ex-2" placeholder="Nhập năm sinh">
+            <button onclick="age('ex-2')">Tính tuổi</button>
+        </div>
+        <p id="yourAge">Kêt quả: </p>
+    </div>
+    
+    <div class="container">
+        <h2>Bài tập 3: Xếp loại học lực</h2>
+        <label for="ex-3">Nhập điểm 0 - 100:</label>
+        <div class="flex-row">
+            <input type="number" name="ex-3" id="ex-3" value="0" min="0" max="100">
+            <button onclick="pointRate('ex-3')">Kiểm tra</button>
+        </div>
+        <p id="point">Kết quả: </p>
+    </div>
+
+    <div class="container flex-column" style="align-items: flex-start;">
+        <h2>Bài tập 4: Máy tính tình yêu</h2>
+        <table>
+            <tr>
+                <td>
+                    <label for="male">Tên bạn nam:</label>
+                </td>
+                <td>
+                    <input type="text" name="male" id="male" placeholder="Nhập tên bạn nam...">
+                </td>
+                <td rowspan="2">
+                    <button onclick="love('male', 'female')">Xem tỉ lệ</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="female">Tên bạn nữ:</label>
+                </td>
+                <td>
+                    <input type="text" name="female" id="female" placeholder="Nhập tên bạn nữ...">
+                </td>
+            </tr>
+        </table>
+        <p id="loveResult">Kết quả:</p>
+    </div>
+
+    <div class="container">
+        <h2>Bài tập 5: Đoán số may mắn</h2>
+        <table>
+            <tr>
+                <td>
+                    <label for="inp">Bạn chọn:</label>
+                    <input type="number" min="1" max="10" value="0" id="inp">
+                </td>
+                <td rowspan="2">
+                    <button onclick="randGame()">Đoán</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Máy chọn: <span id="machine"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="gameResult">Kết quả:</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Bài tập 6: Kéo búa bao</h2>
+        <table>
+            <tr>
+                <button id="option-0" onclick="choice(this.id)">Búa</button>
+                <button id="option-1" onclick="choice(this.id)">Bao</button>
+                <button id="option-2" onclick="choice(this.id)">Kéo</button>
+            </tr>
+            <tr>
+                <td>
+                    <label>Bạn chọn: <span id="choice"></span></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Máy chọn: <span id="machine2"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p> Kết quả: <span id="game2Result"></span></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Bài tập 7: Xúc xắc may mắn</h2>
+        <p>Xúc xắc: <b><span id="dice"></span></b></p>
+        <p id="loading-dice"></p>
+        <button onclick="dice('dice', [1,2,3,4,5,6], 'đổ')">Đổ</button>
+    </div>
+
+    <script>
+        const lst = ["Ăn mày", "Công nhân", "Thợ tóc", "Đầu bếp", "Doanh nhân", "Culy"]
+    </script>
+    <div class="container">
+        <h2>Bài tập 8: Dự đoán nghề nghiệp</h2>
+        <label for="usrName">Tên:</label>
+        <input type="text" name="usrName" id="usrName" placeholder="Nhập tên bạn">        <p id="loading"></p>
+        <p>Nghề tương lai: <span id="carrer"></span></p>
+        <p id="loading-carrer"></p>
+        <button onclick="dice('carrer', lst, 'dự đoán')">Dự đoán</button>
+    </div>
+    <div class="container">
+        <h2>Bài tập 9: Quay thưởng may mắn</h2>
+        <p>Phần thưởng: <b><span id="redem"></span></b></p>
+        <p id="loading-redem"></p>
+        <button onclick="dice('redem', ['1.000 đ', '5.000 đ', '10.000 đ', '100.000 đ'], 'quay')">Quay thưởng</button>
+    </div>
+
+    <div class="container">
+        <h2>Bài tập 10: Máy tính đơn giản</h2>
+        <table>
+            <tr>
+                <td>
+                    <span>A:</span>
+                    <input style="width: 60px; height: 30px;" type="number" id="numA">
+                </td>
+                <td>
+                    <span>B:</span>
+                    <input style="width: 60px; height: 30px;" type="number" id="numB">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Kết quả: <span id="resultCalc"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="calc(this.id)" id="calc+"><b>+</b></button>
+                </td>
+                <td>
+                    <button onclick="calc(this.id)" id="calc-"><b>-</b></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="calc(this.id)" id="calc*"><b>X</b></button>
+                </td>
+                <td>
+                    <button onclick="calc(this.id)" id="calc/"><b>/</b></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Bài tập 11: Kiểm tra mật khẩu</h2>
+        <label for="pwd">Mật khẩu: </label>
+        <input type="password" name="pwd" id="pwd" oninput="checkPwd(this.id)" placeholder="Nhập mật khẩu..." required>
+        <p id="warning" style="color: red; font-weight: bold;display: none;"></p>
+    </div>
+</body>
+</html>
