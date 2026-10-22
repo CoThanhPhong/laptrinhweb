@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header, footer {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+header>img {
+    width: 7%;
+    height: 100%;
+    object-fit: cover;
+    filter: invert(100%);
+}
+
+a {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu>a:hover {
+    color: red;
+}
+
+#Products, #Contact, .about-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.about-container>* {
+    padding: 5px 0;
+}
+
+#about>img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.btn {
+    margin: 20px;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    align-self: flex-end;
+    background-color: grey;
+}
+
+.btn:hover {
+    background-color: rgba(150, 150, 150, 0.87);
+}
+
+.item-container {
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+}
+
+.item {
+    width: 150px;
+    height: fit-content;
+    padding: 8px;
+    margin: 20px;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.365);
+}
+
+.item>img {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item:hover {
+    transition: 0.4s;
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.365);
+    transform: translateY(-10px);
+}
+
+.item>* {
+    padding: 5px;
+}
+
+.item>h3 {
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+}
+
+.price {
+    color: red;
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+#Contact {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.297);
+}
+
+ul {
+    padding: 10px;
+}
+
+li {
+    padding: 5px;
+}
+
+.footer-container {
+    justify-content: center;
+}
+
+.footer-container>p {
+    padding: 10px;
+}
